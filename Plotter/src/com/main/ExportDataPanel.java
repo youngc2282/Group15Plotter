@@ -15,8 +15,8 @@ import javax.swing.JTextField;
 
 public class ExportDataPanel extends JDialog implements ActionListener{
 	
-	int HEIGHT=200;
-	int WIDTH=400;
+	final int HEIGHT=200;
+	final int WIDTH=400;
 	
 
 	private JPanel pan;

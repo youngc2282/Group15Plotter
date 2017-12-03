@@ -140,7 +140,9 @@ public class Colorpanel extends JDialog implements ActionListener{
 			
 			setLayout(null);
 			setOpaque(false);
+			setFocusable(false);
 			textvalue=new JTextField(10);
+			textvalue.setEditable(false);
 			
 			cho=new JButton(">");
 			cho.addActionListener(

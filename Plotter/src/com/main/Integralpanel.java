@@ -111,7 +111,7 @@ public class Integralpanel extends JDialog implements ActionListener{
 	private void calculateIntegral(Calculator calc2) {
 		double val=0;
 		if(types.isSelected())
-			val=AdvancedCalculator.SimpsonIntegral(calc2);
+			val=AdvancedCalculator.simpsonIntegral(calc2);
 		else if(typet.isSelected())
 			val=AdvancedCalculator.trapeziumIntegral(calc2);
 		else if(typeg.isSelected())

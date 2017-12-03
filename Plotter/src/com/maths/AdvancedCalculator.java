@@ -21,7 +21,7 @@ public class AdvancedCalculator {
 	
 	}
 	
-	public static double SimpsonIntegral(Calculator calc){
+	public static double simpsonIntegral(Calculator calc){
 		
 		double total=0;
 		
