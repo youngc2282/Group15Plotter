@@ -15,7 +15,7 @@ public class LineData implements Cloneable{
 		}
 
 		public void addIndex(int n){
-			lineDatas.add(new Integer(n));
+			lineDatas.add(Integer.valueOf(n));
 		}
 
 		public int getIndex(int i){

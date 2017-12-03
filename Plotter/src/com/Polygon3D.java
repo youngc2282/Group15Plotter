@@ -271,10 +271,7 @@ public class Polygon3D extends Polygon{
 	 */
 	public static Polygon3D clipPolygon3D(Polygon3D p_in,Polygon3D  p_out){
 
-
-
 		//build all vertices adding border points
-
 
 		for(int i=0;i<p_out.npoints;i++){
 
