@@ -84,7 +84,7 @@ public class ExportDataPanel extends JDialog implements ActionListener{
 						
 					}	
 			
-					int returnVal = fc.showOpenDialog(null);
+					int returnVal = fc.showSaveDialog(null);
 					
 					if (returnVal == JFileChooser.APPROVE_OPTION) {
 						File file = fc.getSelectedFile();

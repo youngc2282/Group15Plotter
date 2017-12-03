@@ -312,13 +312,13 @@ public class Visualizer extends JFrame implements ActionListener,KeyListener,
 		add(up);
 		
 		JLabel flabel = new JLabel("Displayed function: y=");
-		flabel.setBounds(5,5,130,20);
+		flabel.setBounds(5,5,145,20);
 		up.add(flabel);
 		
 		displayedFunction=new FunctionTextField();
 		displayedFunction.addKeyListener(this);
 		//displayedFunction.setEditable(false);
-		displayedFunction.setBounds(140,5,400,20);
+		displayedFunction.setBounds(155,5,400,20);
 		displayedFunction.addFocusListener(this);
 		
 		up.add(displayedFunction);
@@ -339,13 +339,13 @@ public class Visualizer extends JFrame implements ActionListener,KeyListener,
 			
 			add(up);
 			JLabel flabel = new JLabel("Displayed function: r(teta)=");
-			flabel.setBounds(5,5,160,20);
+			flabel.setBounds(5,5,185,20);
 			up.add(flabel);
 			
 			displayedFunction=new FunctionTextField();
 			displayedFunction.addKeyListener(this);
 			//displayedFunction.setEditable(false);
-			displayedFunction.setBounds(170,5,400,20);
+			displayedFunction.setBounds(195,5,400,20);
 			displayedFunction.addFocusListener(this);
 			up.add(displayedFunction);
 			
@@ -366,13 +366,13 @@ public class Visualizer extends JFrame implements ActionListener,KeyListener,
 			add(up);
 			
 			JLabel flabel = new JLabel("Displayed function: z(x,y)=");
-			flabel.setBounds(5,5,150,20);
+			flabel.setBounds(5,5,175,20);
 			up.add(flabel);
 			
 			displayedFunction=new FunctionTextField();
 			displayedFunction.addKeyListener(this);
 			//displayedFunction.setEditable(false);
-			displayedFunction.setBounds(160,5,400,20);
+			displayedFunction.setBounds(185,5,400,20);
 			displayedFunction.addFocusListener(this);
 			
 			up.add(displayedFunction);
@@ -455,7 +455,7 @@ public class Visualizer extends JFrame implements ActionListener,KeyListener,
 			
 		
 		JLabel rlabel = new JLabel("Displayed range:");
-		rlabel.setBounds(5,60,100,20);
+		rlabel.setBounds(5,60,110,20);
 		right.add(rlabel);
 		
 		JLabel alabel = new JLabel("a:");
@@ -878,7 +878,7 @@ private String fixMultipliers(String input){
 		if(currentDirectory!=null)
 			fc.setCurrentDirectory(currentDirectory);
 		
-		int returnVal = fc.showOpenDialog(this);
+		int returnVal = fc.showSaveDialog(this);
 		
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
 			
